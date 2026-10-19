@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onProfileClick }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [active, setActive] = useState('home');
@@ -64,11 +64,11 @@ export default function Navbar() {
       >
         <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           {/* Logo */}
-          <motion.a
-            href="#home"
-            onClick={(e) => { e.preventDefault(); handleNavClick('#home'); }}
+          <motion.button
+            type="button"
+            onClick={onProfileClick}
             whileHover={{ scale: 1.05 }}
-            style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem' }}
+            style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem', padding: 0, border: 0, background: 'transparent', cursor: 'pointer', textAlign: 'left' }}
           >
             <div style={{
               width: '2.5rem',
@@ -100,7 +100,7 @@ export default function Navbar() {
               <span style={{ color: 'var(--text-primary)', fontWeight: 700 }}>{PERSONAL.name}</span>
               <span style={{ fontSize: '0.65rem', color: 'var(--cyan)', letterSpacing: '0.1em', textTransform: 'uppercase', fontFamily: 'var(--font-mono)' }}>Full Stack Dev</span>
             </span>
-          </motion.a>
+          </motion.button>
 
           {/* Desktop links */}
           <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }} className="hidden md:flex">

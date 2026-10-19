@@ -90,7 +90,7 @@ function TypedText({ text, delay = 0 }) {
   );
 }
 
-export default function Hero() {
+export default function Hero({ onProfileClick }) {
   const [hasWebGL] = useState(() => typeof window !== 'undefined' ? supportsWebGL() : false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const heroRef = useRef(null);
@@ -184,9 +184,11 @@ export default function Hero() {
               marginBottom: '1rem',
             }}
           >
-            <span className="gradient-text">SHIGIN</span>
-            <br />
-            <span style={{ color: 'var(--text-primary)' }}>T.P</span>
+            <button type="button" onClick={onProfileClick} className="hero-name-button" aria-label="Open Shigin TP profile">
+              <span className="gradient-text">SHIGIN</span>
+              <br />
+              <span style={{ color: 'var(--text-primary)' }}>T.P</span>
+            </button>
           </motion.h1>
 
           {/* Title */}

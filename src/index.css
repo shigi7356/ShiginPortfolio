@@ -499,3 +499,73 @@ body {
   .section-padding { padding: 4rem 0; }
   .section-container { padding: 0 1rem; }
 }
+ .profile-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: rgba(2, 4, 8, 0.78);
+  backdrop-filter: blur(10px);
+}
+.profile-modal {
+  position: relative;
+  width: min(100%, 25rem);
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(34, 211, 238, 0.28);
+  border-radius: 1.25rem;
+  background: rgba(7, 12, 20, 0.98);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5), 0 0 36px rgba(34, 211, 238, 0.1);
+  color: var(--text-primary);
+  text-align: center;
+}
+.profile-modal-close {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  border-radius: 0.6rem;
+  background: rgba(34, 211, 238, 0.08);
+  color: var(--cyan);
+  cursor: pointer;
+}
+.profile-modal-photo {
+  display: block;
+  width: clamp(9rem, 38vw, 12rem);
+  aspect-ratio: 1;
+  margin: 0 auto 1.25rem;
+  border: 3px solid rgba(34, 211, 238, 0.75);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  box-shadow: 0 0 28px rgba(34, 211, 238, 0.2);
+}
+.profile-modal h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+.profile-modal p {
+  margin: 0.5rem 0 0;
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.hero-name-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-align: left;
+  cursor: pointer;
+}

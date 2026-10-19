@@ -67,7 +67,7 @@ export const SKILLS = [
       { name: "Git & GitHub", confirmed: true },    // ← confirm or remove
       { name: "Visual Studio", confirmed: true },           // ← confirm or remove
       { name: "VS Code", confirmed: true   },          // ← confirm or remove
-      { name: "Linux", confirmed: false },            // ← confirm or remove
+      { name: "Linux", confirmed: false },            // ← confirm or d
     ],
   },
 ];
