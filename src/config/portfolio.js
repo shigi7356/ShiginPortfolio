@@ -8,16 +8,15 @@ export const PERSONAL = {
   title: "Full Stack Developer",
   tagline: "Building digital experiences beyond boundaries.",
   aboutHeading: "The Developer Behind the Universe.",
-  aboutText: `I'm a Full Stack Developer passionate about crafting seamless digital experiences from concept to deployment. I thrive at the intersection of design and engineering — turning complex problems into elegant, performant solutions.
+aboutText: `I'm Shigin T.P., a Software Developer with hands-on experience in developing ERP applications for desktop and web platforms. My development journey started with WinForms (.NET Framework), where I gained practical experience in desktop application development.
 
-My journey spans across the full stack: architecting scalable backends, building intuitive frontends, and everything in between. I believe great software is not just functional — it's an experience.
+Currently, I'm working on a Web ERP application using ASP.NET and React. I enjoy building functional applications, developing features, integrating frontend and backend components, and solving technical problems.
 
-[Replace this with your own introduction. Talk about your passion, your journey, and what makes you unique as a developer.]`,
-
+My technical skills include C#, ASP.NET Core, ASP.NET MVC, React, HTML, CSS, JavaScript, and SQL Server. I'm passionate about continuously improving my development skills and building reliable, user-friendly software solutions.`,
   // Contact — replace with real values
-  email: "your.email@example.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
+  email: "shigintp@gmail.com",
+  github: "https://github.com/shigi7356",
+  linkedin: "https://www.linkedin.com/in/shigin-tp-361baa356",
   twitter: "https://twitter.com/yourusername", // optional
 };
 
@@ -43,8 +42,8 @@ export const SKILLS = [
     icon: "Server",
     color: "#818cf8",
     items: [
-      { name: "Node.js", confirmed: false },         // ← confirm or remove
-      { name: "Python", confirmed: false },           // ← confirm or remove
+      { name: "ASP.NET", confirmed: true },         // ← confirm or remove
+      { name: "Python", confirmed: true },           // ← confirm or remove
       { name: "Express.js", confirmed: false },       // ← confirm or remove
       { name: "REST APIs", confirmed: false },        // ← confirm or remove
     ],
@@ -54,9 +53,9 @@ export const SKILLS = [
     icon: "Database",
     color: "#34d399",
     items: [
-      { name: "MongoDB", confirmed: false },          // ← confirm or remove
+      { name: "SQL Server", confirmed: true },          // ← confirm or remove
       { name: "PostgreSQL", confirmed: false },       // ← confirm or remove
-      { name: "MySQL", confirmed: false },            // ← confirm or remove
+      { name: "MySQL", confirmed: true },            // ← confirm or remove
       { name: "Redis", confirmed: false },            // ← confirm or remove
     ],
   },
@@ -65,9 +64,9 @@ export const SKILLS = [
     icon: "Wrench",
     color: "#fb923c",
     items: [
-      { name: "Git & GitHub", confirmed: false },    // ← confirm or remove
-      { name: "Docker", confirmed: false },           // ← confirm or remove
-      { name: "VS Code", confirmed: false },          // ← confirm or remove
+      { name: "Git & GitHub", confirmed: true },    // ← confirm or remove
+      { name: "Visual Studio", confirmed: true },           // ← confirm or remove
+      { name: "VS Code", confirmed: true   },          // ← confirm or remove
       { name: "Linux", confirmed: false },            // ← confirm or remove
     ],
   },
@@ -79,37 +78,37 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     id: 1,
-    title: "Project Alpha",                          // ← Replace with real title
+    title: "ERP Web Application",
     description:
-      "A full-stack web application built with modern technologies. Replace this description with your actual project overview, key features and the problem it solves.",
-    tags: ["React", "Node.js", "MongoDB"],           // ← Update tags
-    liveUrl: null,                                   // ← Add live URL when ready
-    githubUrl: null,                                 // ← Add GitHub URL when ready
+      "Worked mainly on backend development using ASP.NET Core and SQL Server. Developed REST APIs and business logic for ERP workflows, including inventory, invoice, and stock management. Optimized SQL queries and stored procedures, contributed to frontend development and API integration using React.js, fixed bugs, improved application performance, and collaborated with team members on feature implementation and debugging.",
+    tags: ["ASP.NET Core", "SQL Server", "React.js", "REST APIs"],
+    liveUrl: null,
+    githubUrl: null,
     color: "#22d3ee",
-    placeholder: true,
+    placeholder: false,
   },
   {
-    id: 2,
-    title: "Project Beta",                           // ← Replace with real title
-    description:
-      "An innovative solution that demonstrates your technical depth. Add details about the architecture, challenges overcome and your role in the project.",
-    tags: ["Python", "PostgreSQL", "Docker"],        // ← Update tags
-    liveUrl: null,
-    githubUrl: null,
-    color: "#818cf8",
-    placeholder: true,
-  },
-  {
-    id: 3,
-    title: "Project Gamma",                          // ← Replace with real title
-    description:
-      "A creative project showcasing your skills in [area]. Describe what makes this project unique and what you learned from building it.",
-    tags: ["Next.js", "TypeScript", "AWS"],          // ← Update tags
-    liveUrl: null,
-    githubUrl: null,
-    color: "#34d399",
-    placeholder: true,
-  },
+  id: 2,
+  title: "ERP Inventory Management System",
+  description:
+    "Developed inventory workflows for stock management and warehouse operations. Implemented product tracking, stock movement, and batch handling features. Optimized database procedures for faster transaction processing.",
+  tags: ["ASP.NET Core", "SQL"],
+  liveUrl: null,
+  githubUrl: null,
+  color: "#818cf8",
+  placeholder: false,
+},
+{
+  id: 3,
+  title: "Service Invoice Management API",
+  description:
+    "Developed and maintained APIs for service invoice creation, updates, and product management. Implemented invoice item mapping, transaction validation, stock verification, and quantity validation during invoice processing. Developed SQL queries and stored procedures for invoice operations. Implemented product search, filtering, and pagination. Improved API response handling, optimized backend logic and database queries, fixed production-level issues, and collaborated with frontend developers on API integration and testing.",
+  tags: ["ASP.NET Core", "SQL", "React.js", "Testing"],
+  liveUrl: null,
+  githubUrl: null,
+  color: "#34d399",
+  placeholder: false,
+},
 ];
 
 // ============================================================
@@ -120,27 +119,27 @@ export const JOURNEY = [
     id: 1,
     year: "20XX",                                    // ← Replace with real year
     type: "education",
-    title: "Your Degree / Certification",            // ← Replace with real qualification
-    organization: "Your Institution",               // ← Replace with real institution
-    description: "Add details about your educational background or key achievement here.",
+    title: "Bachelor of Computer Applications (BCA)",           // ← Replace with real qualification
+    organization:  "Garden City University, Bangalore",               // ← Replace with real institution
+    description:  "Built a strong foundation in programming, database management, software development, and web technologies.",
     placeholder: true,
   },
   {
     id: 2,
     year: "20XX",
     type: "experience",
-    title: "Your Role / Position",                   // ← Replace with real role
-    organization: "Your Company / Project",          // ← Replace with real employer
-    description: "Describe your responsibilities, accomplishments and technologies used.",
+    title: "Software Developer",                  // ← Replace with real role
+    organization: "Polosys Technologies L.L.P",          // ← Replace with real employer
+    description:  "Working on ERP applications using ASP.NET Core, SQL Server, React.js, and WinForms. Developing REST APIs, implementing business logic, managing database operations, and improving application performance.",
     placeholder: true,
   },
   {
     id: 3,
     year: "20XX",
     type: "milestone",
-    title: "Key Milestone or Achievement",           // ← Replace with real milestone
-    organization: "Context / Platform",
-    description: "Share a defining moment in your development journey.",
+    title: "ERP Application Development",           // ← Replace with real milestone
+    organization: "Building Real-World Software Solutions",
+    description: "Gained hands-on experience in developing ERP modules for inventory, stock management, and service invoicing. Improved skills in backend development, API integration, SQL optimization, debugging, and teamwork.",
     placeholder: true,
   },
 ];

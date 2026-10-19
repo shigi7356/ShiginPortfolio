@@ -181,6 +181,8 @@ export default function About() {
                 {/* Quick facts */}
                 {[
                   { icon: Code2, label: 'Specialty', value: 'Full Stack Development' },
+                  { icon: Code2, label: 'Experience', value: 'ERP Application Development' },
+                  { icon: Code2, label: 'Experience', value: 'Desktop ERP & Web ERP' },
                   { icon: Sparkles, label: 'Passion', value: 'Building Great Products' },
                 ].map(({ icon: Icon, label, value }) => (
                   <div key={label} style={{
